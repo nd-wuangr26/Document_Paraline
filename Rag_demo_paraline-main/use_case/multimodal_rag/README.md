@@ -2,6 +2,9 @@
 
 Triển khai này trình bày một hệ thống Multimodal Retrieval Augmented Generation (RAG) có khả năng xử lý cả văn bản và hình ảnh từ tài liệu PDF. Hệ thống kết hợp sức mạnh của nhiều mô hình AI để cung cấp câu trả lời chính xác cho các truy vấn về nội dung tài liệu.
 
+<img width="1999" height="734" alt="image" src="https://github.com/user-attachments/assets/bd5da1fe-b04e-4b8e-b01f-8f3f65dea5cb" />
+
+
 ## Overview
 
 Hệ thống RAG đa phương thức xử lý tài liệu PDF chứa cả văn bản và hình ảnh, tạo embeddings cho cả hai phương thức, và sử dụng chúng cho việc truy xuất và trả lời câu hỏi.
@@ -15,14 +18,8 @@ Hệ thống RAG đa phương thức xử lý tài liệu PDF chứa cả văn b
 - Tự động trích xuất và lưu trữ hình ảnh trong thư mục `extracted_images`
 
 ### 2. Image Understanding
-- **Model**: Google's Gemini 1.5 Flash model
+- **Model**: Salesforce/blip-image-captioning-base
 - **Purpose**: Tạo ra các mô tả tóm tắt của hình ảnh
-- **Technique**: Sử dụng prompt chuyên biệt cho việc chú thích hình ảnh:
-  ```python
-  "You are an assistant tasked with summarizing tables, images and text for retrieval.
-   These summaries will be embedded and used to retrieve the raw text or table elements
-   Give a concise summary of the table or text that is well optimized for retrieval."
-  ```
 
 ### 3. Text Processing and Chunking
 - **Chunking Method**: Sử dụng class RecursiveCharacterTextSplitter
