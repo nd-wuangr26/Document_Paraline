@@ -1,9 +1,9 @@
 # Simple RAG
 ## Tổng Quan Hệ Thống
 
-Hệ thống RAG này được thiết kế để xử lý và trả lời câu hỏi từ tài liệu PDF nội bộ. Sử dụng các thuật toán tính độ tương đồng để tìm ra những đoạn văn có trong document và lưu trữ các đoạn văn dưới dạng vector trong vector store.
+Hệ thống RAG này được thiết kế để xử lý và trả lời câu hỏi từ tài liệu PDF nội bộ. Sử dụng các thuật toán tính độ tương đồng để tìm ra những đoạn văn có trong document và lưu trữ các đoạn văn dưới dạng vector trong vector store. Đưa query của người dùng kết hợp với các chunk để đưa vào LLM để sinh ra câu trả lời.
 
-<img width="720" height="1103" alt="image" src="https://github.com/user-attachments/assets/81bf0b39-e8b8-48c7-a1ad-79eefc367c46" />
+<img width="327" height="154" alt="image" src="https://github.com/user-attachments/assets/308f6bd8-0813-4746-b9f9-c59ee46b2629" />
 
 
 ## Các Thành Phần Chính
