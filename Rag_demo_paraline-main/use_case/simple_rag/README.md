@@ -1,12 +1,27 @@
-# Simple RAG
-## Tổng Quan Hệ Thống
+# Simple Retrieval-Augmented Generation (RAG)
+## Tổng Quan về Simple Retrieval-Augmented Generation (RAG)
 
-Hệ thống RAG này được thiết kế để xử lý và trả lời câu hỏi từ tài liệu PDF nội bộ. Sử dụng các thuật toán tính độ tương đồng để tìm ra những đoạn văn có trong document và lưu trữ các đoạn văn dưới dạng vector trong vector store. Đưa query của người dùng kết hợp với các chunk để đưa vào LLM để sinh ra câu trả lời.
+Retrieval-Augmented Generation (RAG) là một phương pháp tiên tiến trong lĩnh vực trí tuệ nhân tạo, đặc biệt trong xử lý ngôn ngữ tự nhiên (NLP). RAG kết hợp giữa hai kỹ thuật chính: truy xuất thông tin (retrieval) và sinh văn bản (generation), nhằm tạo ra các hệ thống có khả năng cung cấp câu trả lời chi tiết và chính xác dựa trên thông tin từ nhiều nguồn.
 
-<img width="327" height="154" alt="image" src="https://github.com/user-attachments/assets/308f6bd8-0813-4746-b9f9-c59ee46b2629" />
+<img width="825" height="669" alt="image" src="https://github.com/user-attachments/assets/e38037be-71c8-4808-aded-476127392805" />
 
+## Các bước thực hiện RAG 
+1. Create Vector database: Đầu tiên, convert toàn bộ dữ liệu tri thức thành các vector và lưu trữ chúng vào một vector database.
+2. User input: User cung cấp 1 câu truy vấn (query) bằng ngôn ngữ tự nhiên nhằm tìm kiếm câu trả lời hoặc để hoàn thành câu truy vấn đó.
+3. Information retrieval: Cơ chế retrieval quét toàn vộ vector trong database để xác định các phân đoạn tri thức (chính là paragraphs) nào có ngữ nghĩa tương đồng với câu truy vấn của người dùng. Các paragraphs này sau đó được vào LLM để làm tăng context cho quá trình sinh ra câu trả lời.
+4. Combining data: Các paragraphs được lấy sau quá trình retrieval từ database được kết hợp với câu query ban đầu của user tạo thành 1 câu prompt.
+5. Generate text: Câu prompt được bổ sung thêm context sau đó được đưa qua LLM để sinh ra câu phản hồi cuối cùng theo context bổ sung.
 
-## Các Thành Phần Chính
+## Ưu điểm
+- Với RAG, LLM có thể tận dụng dữ liệu bên ngoài để cung cấp tri thức cho nó.
+- RAG không yêu cầu training lại mô hình, tiết kiệm thời gian và tài nguyên tính toán.
+- Nó hiệu quả ngay cả với một lượng dữ liệu gán nhãn hạn chế.
+
+## Nhược điểm 
+- Chỉ có thể sử dụng trên dữ liệu text
+- Hiệu suất của RAG phụ thuộc vào chất lượng độ chính xác của model retrieval, tính toàn diện và chính xác của kho tri thức có sẵn.
+
+## Các Thành Phần của project 
 
 ### 1. Xử Lý và Phân Đoạn Văn Bản (Chunking)
 - **Phương Pháp**: Semantic Chunking
