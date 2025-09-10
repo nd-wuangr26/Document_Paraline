@@ -9,6 +9,30 @@ Multi-Agent RAG là một hệ thống kết hợp giữa Retrieval-Augmented Ge
 - Tự động chuyển đổi giữa các nguồn dữ liệu
 - Cung cấp câu trả lời chính xác và toàn diện
 
+<img width="824" height="402" alt="image" src="https://github.com/user-attachments/assets/d3e05aaa-7119-4758-ba9e-3ab8a27e3c62" />
+
+## Core Agent types
+
+- Reasearch Agent: Chuyên truy xuất tài liệu (RAG)
+- Analysis Agent: Phân tích chuyên sâu, chuyên về lĩnh vực cụ thể, áp dụng các domain suy luận
+- Sythesis Agent: Kết hợp multi Analysis Agent thành các phản ứng mạch lạc. Xử lý các thông tin mâu thuẫn, sai cú pháp.
+- Quality Agent: Đánh giá đầu ra chính xác, đầy đủ và tuân thủ 
+
+
+## Ưu điểm 
+
+- Chia nhỏ nhiệm vụ, tối ưu hóa chuyên môn: Mỗi agent có thể đảm nhận một vai trò riêng: ví dụ, một agent chuyên retrieval, một agent chuyên tóm tắt, một agent chuyên reasoning. Giúp tăng chất lượng và độ chính xác của kết quả vì agent được “tập trung” vào nhiệm vụ cụ thể.
+- Xử lý đa nguồn dữ liệu hiệu quả: Multi-Agent RAG có thể kết hợp các nguồn dữ liệu khác nhau (text, images, bảng biểu, API) thông qua các agent chuyên biệt, mà không làm rối một agent duy nhất.
+- Tăng khả năng mở rộng: Có thể dễ dàng thêm agent mới cho các nhiệm vụ mới mà không cần viết lại toàn bộ pipeline.
+- Khả năng giải thích tốt hơn: Khi có lỗi hoặc kết quả không chính xác, dễ truy vết xem agent nào đã xử lý phần nào, thuận tiện cho debugging và audit.
+
+## Nhược điểm 
+
+- Chi phí tính toán cao và phức tạp: Mỗi agent cần tài nguyên riêng (CPU/GPU, bộ nhớ), đặc biệt khi chạy nhiều agent song song hoặc xử lý dữ liệu lớn.
+- Quản lý luồng dữ liệu khó khăn: Phải thiết kế cơ chế coordination và communication giữa các agent, nếu không có thể dẫn đến deadlock, lặp thông tin hoặc mất context.
+- Latency cao hơn: Do nhiều agent phối hợp, thời gian từ query → retrieval → generation thường lâu hơn so với single-agent RAG.
+- Khó debug và đồng bộ: Khi có nhiều agent hoạt động song song, lỗi có thể khó xác định nguồn gốc, nhất là khi agent tương tác phức tạp hoặc dựa trên context được truyền giữa nhiều agent.
+
 ## Kiến trúc hệ thống
 
 ### 1. Thành phần cốt lõi
