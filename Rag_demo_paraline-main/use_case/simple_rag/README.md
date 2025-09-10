@@ -1,10 +1,10 @@
 # Simple RAG
-
-Một hệ thống RAG (Retrieval Augmented Generation) đơn giản được tối ưu hóa cho xử lý tài liệu tiếng Việt.
-
 ## Tổng Quan Hệ Thống
 
-Hệ thống RAG này được thiết kế để xử lý và trả lời câu hỏi từ tài liệu PDF tiếng Việt, sử dụng các kỹ thuật tiên tiến trong xử lý ngôn ngữ tự nhiên.
+Hệ thống RAG này được thiết kế để xử lý và trả lời câu hỏi từ tài liệu PDF nội bộ. Sử dụng các thuật toán tính độ tương đồng để tìm ra những đoạn văn có trong document và lưu trữ các đoạn văn dưới dạng vector trong vector store.
+
+<img width="720" height="1103" alt="image" src="https://github.com/user-attachments/assets/81bf0b39-e8b8-48c7-a1ad-79eefc367c46" />
+
 
 ## Các Thành Phần Chính
 
