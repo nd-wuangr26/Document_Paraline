@@ -4,20 +4,24 @@
 Cũng giống như Retrieval Augmented Generation (RAG) tuy nhiên khi đối mặt với vấn đề trong tài liệu còn nhiều kiểu dữ liệu không chỉ riêng text có thể là ảnh, bảng, biểu đồ,... thì lại không thể triển khai được bằng Simple RAG từ đó kỹ thuật Multimodal Retrieval Augmented Generation (RAG) ra đời. Một hệ thống Multimodal Retrieval Augmented Generation (RAG) có khả năng xử lý cả văn bản và hình ảnh từ tài liệu PDF. Hệ thống kết hợp sức mạnh của nhiều mô hình AI để cung cấp câu trả lời chính xác cho các truy vấn về nội dung tài liệu.
 
 <img width="1999" height="734" alt="image" src="https://github.com/user-attachments/assets/bd5da1fe-b04e-4b8e-b01f-8f3f65dea5cb" />
+
 ## Các bước thực hiện
-1. Create Vector Database: Đầu tiên, toàn bộ dữ liệu tri thức được xử lý để tạo vector database. Với tài liệu chứa text và hình ảnh, text được chia thành các chunk nhỏ theo phương pháp Context-Aware Chunking nhằm giữ ngữ cảnh, còn hình ảnh được trích xuất và sinh caption bằng mô hình VLM (Visual Language Model). Sau đó, caption được gắn vào chunk text phù hợp dựa trên vị trí, trang hoặc semantic similarity. Mỗi chunk text + caption sau đó được chuyển đổi thành vector embeddings bằng mô hình embedding và lưu trữ vào vector database như FAISS, Chroma hoặc Pinecone.
-2. User Input: Người dùng cung cấp một câu truy vấn (query) bằng ngôn ngữ tự nhiên. Query này có thể chỉ là text, hoặc có thể bao gồm hình ảnh nếu muốn tìm kiếm dựa trên dữ liệu đa phương tiện.
-3. Information Retrieval: Cơ chế retrieval quét toàn bộ vector trong database để xác định các chunk (paragraphs) có ngữ nghĩa tương đồng với câu truy vấn. Với Multimodal RAG, retrieval có thể dựa trên text embedding, image embedding hoặc kết hợp cả hai. Những chunk này sau đó được lấy để bổ sung context cho quá trình sinh câu trả lời bởi LLM.
-4. Combining Data: Các chunk text + caption được lấy từ database được kết hợp với câu truy vấn của user để tạo thành một prompt duy nhất. Prompt này giữ nguyên ngữ cảnh đầy đủ giữa text và hình ảnh, đảm bảo LLM có thể hiểu mối liên hệ giữa các phần dữ liệu đa phương tiện.
-5. Generate Text: Prompt đã được bổ sung context được đưa qua LLM để sinh câu trả lời cuối cùng. LLM sử dụng thông tin text và hình ảnh trong các chunk để tạo ra phản hồi chính xác, có ngữ cảnh, đáp ứng đầy đủ yêu cầu của người dùng.
+
+1. **Create Vector Database:** Đầu tiên, toàn bộ dữ liệu tri thức được xử lý để tạo vector database. Với tài liệu chứa text và hình ảnh, text được chia thành các chunk nhỏ theo phương pháp Context-Aware Chunking nhằm giữ ngữ cảnh, còn hình ảnh được trích xuất và sinh caption bằng mô hình VLM (Visual Language Model). Sau đó, caption được gắn vào chunk text phù hợp dựa trên vị trí, trang hoặc semantic similarity. Mỗi chunk text + caption sau đó được chuyển đổi thành vector embeddings bằng mô hình embedding và lưu trữ vào vector database như FAISS, Chroma hoặc Pinecone.
+2. **User Input:** Người dùng cung cấp một câu truy vấn (query) bằng ngôn ngữ tự nhiên. Query này có thể chỉ là text, hoặc có thể bao gồm hình ảnh nếu muốn tìm kiếm dựa trên dữ liệu đa phương tiện.
+3. **Information Retrieval:** Cơ chế retrieval quét toàn bộ vector trong database để xác định các chunk (paragraphs) có ngữ nghĩa tương đồng với câu truy vấn. Với Multimodal RAG, retrieval có thể dựa trên text embedding, image embedding hoặc kết hợp cả hai. Những chunk này sau đó được lấy để bổ sung context cho quá trình sinh câu trả lời bởi LLM.
+4. **Combining Data:** Các chunk text + caption được lấy từ database được kết hợp với câu truy vấn của user để tạo thành một prompt duy nhất. Prompt này giữ nguyên ngữ cảnh đầy đủ giữa text và hình ảnh, đảm bảo LLM có thể hiểu mối liên hệ giữa các phần dữ liệu đa phương tiện.
+5. **Generate Text:** Prompt đã được bổ sung context được đưa qua LLM để sinh câu trả lời cuối cùng. LLM sử dụng thông tin text và hình ảnh trong các chunk để tạo ra phản hồi chính xác, có ngữ cảnh, đáp ứng đầy đủ yêu cầu của người dùng.
 
 ## Ưu điểm 
+
 - Hiểu ngữ cảnh đa phương tiện: Multimodal RAG không chỉ dựa vào text mà còn khai thác thông tin từ hình ảnh thông qua caption hoặc embedding, giúp LLM hiểu mối quan hệ giữa text và hình ảnh.
 - Cải thiện độ chính xác của retrieval: Việc kết hợp text và caption làm vector embeddings giàu thông tin hơn, giúp tìm kiếm các chunk phù hợp với query chính xác hơn.
 - Giữ ngữ cảnh trong document dài: Sử dụng Context-Aware Chunking giúp giữ mạch logic khi chia nhỏ text, tránh mất thông tin quan trọng khi query.
 - Mở rộng dễ dàng: Có thể thêm nhiều loại dữ liệu khác (video, audio, bảng biểu) bằng cách sinh embedding phù hợp và gắn vào chunk text, mà không thay đổi toàn bộ pipeline.
 
 ## Nhược điểm:
+
 - Chi phí tính toán cao: Việc trích xuất ảnh, sinh caption bằng VLM, tạo embedding và lưu vào vector database tốn nhiều tài nguyên, đặc biệt với document lớn.
 - Xử lý ngữ cảnh hình ảnh phức tạp: Nếu ảnh không có caption tốt hoặc vị trí ảnh khó xác định, việc gắn caption vào text có thể sai ngữ cảnh, làm giảm chất lượng retrieval.
 - Phụ thuộc vào chất lượng mô hình: Hiệu quả phụ thuộc vào độ chính xác của VLM để sinh caption và mô hình embedding để đo semantic similarity.
