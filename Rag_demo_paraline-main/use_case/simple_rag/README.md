@@ -13,9 +13,9 @@ Retrieval-Augmented Generation (RAG) là một phương pháp tiên tiến trong
 5. Generate text: Câu prompt được bổ sung thêm context sau đó được đưa qua LLM để sinh ra câu phản hồi cuối cùng theo context bổ sung.
 
 ## Ưu điểm
-- Với RAG, LLM có thể tận dụng dữ liệu bên ngoài để cung cấp tri thức cho nó.
+- Khả năng sử dụng hiệu quả các nguồn kiến ​​thức bên ngoài khi tạo văn bản. Bằng cách truy xuất thông tin từ nhiều nguồn khác nhau, các mô hình RAG có thể tạo ra phản hồi chính xác hơn, phù hợp ngữ cảnh và mang tính thông tin cao hơn so với các mô hình truyền thống chỉ dựa vào các mẫu được học nội bộ.
+- Các mô hình RAG đã được áp dụng cho nhiều nhiệm vụ NLP khác nhau, bao gồm trả lời câu hỏi, tóm tắt, tạo đối thoại và tạo nội dung. Chúng đã cho thấy kết quả đầy hứa hẹn trong việc cải thiện chất lượng và mức độ phù hợp của văn bản được tạo ra bằng cách kết hợp kiến ​​thức bên ngoài trong quá trình tạo văn bản.
 - RAG không yêu cầu training lại mô hình, tiết kiệm thời gian và tài nguyên tính toán.
-- Nó hiệu quả ngay cả với một lượng dữ liệu gán nhãn hạn chế.
 
 ## Nhược điểm 
 - Chỉ có thể sử dụng trên dữ liệu text
