@@ -1,6 +1,6 @@
 # Multimodal RAG
 
-Triển khai này trình bày một hệ thống Multimodal Retrieval Augmented Generation (RAG) có khả năng xử lý cả văn bản và hình ảnh từ tài liệu PDF. Hệ thống kết hợp sức mạnh của nhiều mô hình AI để cung cấp câu trả lời chính xác cho các truy vấn về nội dung tài liệu.
+Cũng giống như Retrieval Augmented Generation (RAG) tuy nhiên khi đối mặt với vấn đề trong tài liệu còn nhiều kiểu dữ liệu không chỉ riêng text có thể là ảnh, bảng, biểu đồ,... thì lại không thể triển khai được bằng Simple RAG từ đó kỹ thuật Multimodal Retrieval Augmented Generation (RAG) ra đời. Một hệ thống Multimodal Retrieval Augmented Generation (RAG) có khả năng xử lý cả văn bản và hình ảnh từ tài liệu PDF. Hệ thống kết hợp sức mạnh của nhiều mô hình AI để cung cấp câu trả lời chính xác cho các truy vấn về nội dung tài liệu.
 
 <img width="1999" height="734" alt="image" src="https://github.com/user-attachments/assets/bd5da1fe-b04e-4b8e-b01f-8f3f65dea5cb" />
 
