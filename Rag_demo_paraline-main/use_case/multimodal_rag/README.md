@@ -1,22 +1,23 @@
-# Multimodal RAG Implementation
+# Multimodal RAG
 
-This implementation demonstrates a Multimodal Retrieval Augmented Generation (RAG) system that can process both text and images from PDF documents. The system combines the power of multiple AI models to provide accurate responses to queries about document content.
+Triển khai này trình bày một hệ thống Multimodal Retrieval Augmented Generation (RAG) có khả năng xử lý cả văn bản và hình ảnh từ tài liệu PDF. Hệ thống kết hợp sức mạnh của nhiều mô hình AI để cung cấp câu trả lời chính xác cho các truy vấn về nội dung tài liệu.
 
 ## Overview
 
-The multimodal RAG system processes PDF documents containing both text and images, creates embeddings for both modalities, and uses them for retrieval and question answering.
+Hệ thống RAG đa phương thức xử lý tài liệu PDF chứa cả văn bản và hình ảnh, tạo embeddings cho cả hai phương thức, và sử dụng chúng cho việc truy xuất và trả lời câu hỏi.
+
 
 ## Key Components and Techniques
 
 ### 1. Document Processing
-- **PDF Processing**: Using `Fitz` for extracting both text and images
-- **Image Processing**: Using `PIL` for image handling
-- Automatic extraction and storage of images in an `extracted_images` directory
+- **PDF Processing**: `Fitz` để trích xuất cả văn bản và hình ảnh
+- **Image Processing**: Sử dụng `PIL` để xử lý hình ảnh
+- Tự động trích xuất và lưu trữ hình ảnh trong thư mục `extracted_images`
 
 ### 2. Image Understanding
 - **Model**: Google's Gemini 1.5 Flash model
-- **Purpose**: Generates descriptive summaries of images
-- **Technique**: Uses a specialized prompt for image captioning:
+- **Purpose**: Tạo ra các mô tả tóm tắt của hình ảnh
+- **Technique**: Sử dụng prompt chuyên biệt cho việc chú thích hình ảnh:
   ```python
   "You are an assistant tasked with summarizing tables, images and text for retrieval.
    These summaries will be embedded and used to retrieve the raw text or table elements
@@ -24,29 +25,29 @@ The multimodal RAG system processes PDF documents containing both text and image
   ```
 
 ### 3. Text Processing and Chunking
-- **Chunking Method**: RecursiveCharacterTextSplitter with tiktoken encoding
+- **Chunking Method**: Sử dụng class RecursiveCharacterTextSplitter
 - **Parameters**:
-  - Chunk size: 400 characters
-  - Overlap: 50 characters
-- **Document Structure**: Uses LangChain's Document class with metadata tracking
+  - Chunk size: 400 ký tự
+  - Overlap: 50 ký tự
+- **Document Structure**: Sử dụng class Document của LangChain
 
 ### 4. Embedding System
 - **Model**: Cohere's embed-english-v3.0
-- **Implementation**: Using `CohereEmbeddings` from LangChain
+- **Triển khai**: Sử dụng `CohereEmbeddings` từ LangChain
 - **Features**: 
-  - Processes both text chunks and image descriptions
-  - Creates unified vector representations
+  - Xử lý cả đoạn văn bản và mô tả hình ảnh
+  - Tạo biểu diễn vector thống nhất
 
 ### 5. Vector Storage and Retrieval
 - **Vector Database**: ChromaDB
 - **Retrieval Method**: Similarity search
 - **Parameters**:
-  - Top-k: 1 (retrieving the single most relevant document)
-- **Implementation**: Combined storage of text and image embeddings in a single collection
+  - Top-k: 1 (truy xuất tài liệu có liên quan nhất)
+- **Implementation**: Lưu trữ kết hợp embeddings văn bản và hình ảnh trong một bộ sưu tập
 
 ### 6. Question Answering System
 - **Model**: Cohere's command-r-plus
-- **Temperature**: 0 (for maximum consistency)
+- **Temperature**: 0 (để đảm bảo tính nhất quán tối đa)
 - **Prompt Template**:
   ```
   System: You are an assistant for question-answering tasks. 
@@ -54,10 +55,10 @@ The multimodal RAG system processes PDF documents containing both text and image
   Use three-to-five sentences maximum and keep the answer concise.
   ```
 - **Chain Components**:
-  1. Document Retrieval
-  2. Prompt Formation
-  3. LLM Processing
-  4. Response Parsing
+  1. Truy xuất tài liệu
+  2. Tạo Prompt
+  3. Xử lý LLM
+  4. Phân tích cú pháp phản hồi
 
 ## Usage Example
 
@@ -81,7 +82,7 @@ Figure 1 illustrates the Transformer model architecture, a neural network used f
 
 ## Required API Keys
 
-The implementation requires two API keys:
+Triển khai yêu cầu hai API keys:
 1. `GOOGLE_API_KEY` - For Gemini model access
 2. `COHERE_API_KEY` - For embeddings and LLM
 
@@ -98,8 +99,8 @@ The implementation requires two API keys:
 
 ## Implementation Notes
 
-1. The system processes both text and images simultaneously
-2. Image descriptions are generated before chunking to ensure context preservation
-3. The unified vector store allows for cross-modal retrieval
-4. The system uses a consistent chunk size for both text and image descriptions
-5. Temperature is set to 0 for the final LLM to ensure consistent responses
+1. Hệ thống xử lý đồng thời cả văn bản và hình ảnh
+2. Mô tả hình ảnh được tạo trước khi phân đoạn để đảm bảo bảo toàn ngữ cảnh
+3. Vector store thống nhất cho phép truy xuất đa phương thức
+4. Hệ thống sử dụng kích thước đoạn nhất quán cho cả văn bản và mô tả hình ảnh
+5. Temperature được đặt thành 0 cho LLM cuối cùng để đảm bảo phản hồi nhất quán
