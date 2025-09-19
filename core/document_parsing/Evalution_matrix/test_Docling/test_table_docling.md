@@ -1,0 +1,18 @@
+## 5.1 Hyper Parameter Optimization
+
+| # enc-layers   | # dec-layers   | Language   | TEDs        | TEDs        | TEDs        | mAP (0.75)   | Inference time (secs)   |
+|----------------|----------------|------------|-------------|-------------|-------------|--------------|-------------------------|
+| # enc-layers   | # dec-layers   | Language   | simple      | complex     | all         | mAP (0.75)   | Inference time (secs)   |
+| 6              | 6              | OTSL HTML  | 0.965 0.969 | 0.934 0.927 | 0.955 0.955 | 0.88 0.857   | 2.73 5.39               |
+| 4              | 4              | OTSL HTML  | 0.938 0.952 | 0.904 0.909 | 0.927 0.938 | 0.853 0.843  | 1.97 3.77               |
+| 2              | 4              | OTSL HTML  | 0.923 0.945 | 0.897 0.901 | 0.915 0.931 | 0.859 0.834  | 1.91 3.81               |
+| 4              | 2              | OTSL HTML  | 0.952 0.944 | 0.92 0.903  | 0.942 0.931 | 0.857 0.824  | 1.22 2                  |
+
+## 5.2 Quantitative Results
+
+| Data set     | Language   | TEDs        | TEDs        | TEDs        | mAP(0.75)   | Inference time (secs)   |
+|--------------|------------|-------------|-------------|-------------|-------------|-------------------------|
+| Data set     | Language   | simple      | complex     | all         | mAP(0.75)   | Inference time (secs)   |
+| PubTabNet    | OTSL HTML  | 0.965 0.969 | 0.934 0.927 | 0.955 0.955 | 0.88 0.857  | 2.73 5.39               |
+| FinTabNet    | OTSL HTML  | 0.955 0.917 | 0.961 0.922 | 0.959 0.92  | 0.862 0.722 | 1.85 3.26               |
+| PubTables-1M | OTSL HTML  | 0.987 0.983 | 0.964 0.944 | 0.977 0.966 | 0.896 0.889 | 1.79 3.26               |
