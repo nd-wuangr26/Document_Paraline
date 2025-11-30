@@ -1,0 +1,8 @@
+{"time":"2025-11-26T11:17:27.014736184+07:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-26T11:17:27.479929831+07:00","level":"INFO","msg":"stream: created new stream","id":"cx82lt64"}
+{"time":"2025-11-26T11:17:27.479977517+07:00","level":"INFO","msg":"handler: started","stream_id":"cx82lt64"}
+{"time":"2025-11-26T11:17:27.48010508+07:00","level":"INFO","msg":"stream: started","id":"cx82lt64"}
+{"time":"2025-11-26T11:17:27.48010671+07:00","level":"INFO","msg":"writer: started","stream_id":"cx82lt64"}
+{"time":"2025-11-26T11:17:27.480112094+07:00","level":"INFO","msg":"sender: started","stream_id":"cx82lt64"}
+{"time":"2025-11-26T11:32:59.127760601+07:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/nd-wuang26-thai-nguyen-university-of-technology/huggingface/cx82lt64/file_stream"}
+{"time":"2025-11-26T11:32:59.127817359+07:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/nd-wuang26-thai-nguyen-university-of-technology/huggingface/cx82lt64/file_stream: {\"error\":\"run huggingface/cx82lt64 not found while streaming file\"}"}

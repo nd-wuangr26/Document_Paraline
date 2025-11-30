@@ -1,0 +1,3 @@
+Model,Exact Match (%),BLEU,ROUGE-1 (%),ROUGE-2 (%),ROUGE-L (%),Perplexity
+Qwen2.5-0.5B (BASE),4.00,8.92,38.60,17.25,27.94,5.05
+Qwen2.5-0.5B (Fine-tuned with LoRA),28.00,29.23,52.89,29.34,41.67,3.59

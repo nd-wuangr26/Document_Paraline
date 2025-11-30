@@ -1,0 +1,4 @@
+Model,Exact Match (%),BLEU,ROUGE-1 (%),ROUGE-2 (%),ROUGE-L (%)
+Qwen2.5-0.5B (Fine-tuned),28.00,29.23,52.89,29.34,41.67
+google/flan-t5-base,2.00,8.47,30.85,12.83,25.41
+google/flan-t5-lagre,9.00,6.82,37.22,17.19,28.69

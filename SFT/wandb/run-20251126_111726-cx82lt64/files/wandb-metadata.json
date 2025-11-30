@@ -1,0 +1,40 @@
+{
+  "os": "Linux-6.8.0-87-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.14",
+  "startedAt": "2025-11-26T04:17:26.717078Z",
+  "program": "/home/quang/My_Project/Document_Paraline/SFT/LoRA.ipynb",
+  "codePath": "/home/quang/My_Project/Document_Paraline/SFT/LoRA.ipynb",
+  "codePathLocal": "LoRA.ipynb",
+  "git": {
+    "remote": "https://github.com/nd-wuangr26/Document_Paraline.git",
+    "commit": "c2540611fcb081ca4ffa679008a2a7111014be18"
+  },
+  "email": "nd.wuang26@gmail.com",
+  "root": "/home/quang/My_Project/Document_Paraline/SFT",
+  "host": "quang",
+  "executable": "/media/quang/New Volume/conda_envs/LoRA/bin/python",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "124834152448",
+      "used": "105179156480"
+    }
+  },
+  "memory": {
+    "total": "24966172672"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1650",
+      "memoryTotal": "4294967296",
+      "cudaCores": 896,
+      "architecture": "Turing",
+      "uuid": "GPU-31398565-0259-3dbd-0053-69e143a6f0c7"
+    }
+  ],
+  "cudaVersion": "12.9",
+  "writerId": "jkzdm5ctinqfd02suutebwazj0pg1eee"
+}
