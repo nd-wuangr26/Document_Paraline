@@ -1,0 +1,702 @@
+[
+    {
+        "question": "Mã ngành của ngành Kinh tế công nghiệp là gì?",
+        "expected_answer": "7510604",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "1"
+    },
+    {
+        "question": "Chuyên ngành đào tạo cụ thể của chương trình Kinh tế công nghiệp trong tài liệu là gì?",
+        "expected_answer": "Kế toán doanh nghiệp công nghiệp",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "2"
+    },
+    {
+        "question": "Thời gian đào tạo cho hệ từ xa trình độ đại học ngành Kinh tế công nghiệp dao động trong khoảng bao lâu?",
+        "expected_answer": "Từ 02 đến 04 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "3"
+    },
+    {
+        "question": "Văn bằng tốt nghiệp người học nhận được sau khi hoàn thành chương trình là gì?",
+        "expected_answer": "Cử nhân Kinh tế công nghiệp",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "4"
+    },
+    {
+        "question": "Mục tiêu cụ thể MT1 yêu cầu người học nắm vững kiến thức gì?",
+        "expected_answer": "Nắm vững nguyên lý, quy luật tự nhiên - xã hội; có đủ kiến thức về lý luận chính trị, khoa học tự nhiên, khoa học xã hội nhân văn, khoa học kỹ thuật ở trình độ đại học.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "5"
+    },
+    {
+        "question": "Theo chuẩn đầu ra, mức độ năng lực 'Thành thạo' trong kỹ năng được đánh số mấy trong thang đo?",
+        "expected_answer": "5",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "6"
+    },
+    {
+        "question": "Chuẩn đầu ra 2.2 về thái độ, kỹ năng cá nhân yêu cầu điều gì?",
+        "expected_answer": "Phát hiện, khám phá vấn đề một cách độc lập, ứng dụng kết quả nghiên cứu và khám phá.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "7"
+    },
+    {
+        "question": "Sinh viên tốt nghiệp có thể đảm nhận vị trí nào liên quan đến giảng dạy?",
+        "expected_answer": "Trực tiếp giảng dạy chuyên môn, nghiên cứu trong các trường đại học, cao đẳng khối kinh tế.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "8"
+    },
+    {
+        "question": "Tổng số tín chỉ toàn khóa cho người tốt nghiệp THPT là bao nhiêu (bao gồm cả kiến thức bổ sung)?",
+        "expected_answer": "129 tín chỉ (123 tín chỉ tích lũy + 06 tín chỉ bổ sung)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "9"
+    },
+    {
+        "question": "Khối kiến thức giáo dục đại cương cho hệ tốt nghiệp THPT bao gồm bao nhiêu tín chỉ?",
+        "expected_answer": "31 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "10"
+    },
+    {
+        "question": "Học phần 'Triết học Mác - Lênin' có số tín chỉ là bao nhiêu?",
+        "expected_answer": "3 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "11"
+    },
+    {
+        "question": "Điều kiện tiên quyết để học học phần 'Kinh tế học vĩ mô' (TXFIM205) là gì?",
+        "expected_answer": "Học phần 'Kinh tế học vi mô' (TXFIM204)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "12"
+    },
+    {
+        "question": "Học phần 'Kế toán quản trị 1' thuộc khối kiến thức nào?",
+        "expected_answer": "Kiến thức cơ sở ngành",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "13"
+    },
+    {
+        "question": "Đối với người tốt nghiệp THPT, học kỳ 1 bao gồm những học phần bắt buộc nào thuộc kiến thức bổ sung?",
+        "expected_answer": "Nhập môn Internet và Elearning, Phát triển kỹ năng cá nhân",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "14"
+    },
+    {
+        "question": "Thời gian đào tạo cho người đã có bằng tốt nghiệp Đại học ngành gần là bao lâu?",
+        "expected_answer": "02 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "15"
+    },
+    {
+        "question": "Tổng số tín chỉ cần tích lũy cho người đã có bằng tốt nghiệp Đại học ngành gần là bao nhiêu (tính cả bổ sung)?",
+        "expected_answer": "67 tín chỉ (61 cốt lõi + 6 bổ sung)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "16"
+    },
+    {
+        "question": "Người có bằng Đại học ngành xa cần thời gian đào tạo bao lâu?",
+        "expected_answer": "2,5 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "17"
+    },
+    {
+        "question": "Tổng số tín chỉ cho chương trình dành cho người có bằng Đại học ngành xa là bao nhiêu?",
+        "expected_answer": "91 tín chỉ (85 cốt lõi + 6 bổ sung)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "18"
+    },
+    {
+        "question": "Đối với người có bằng Cao đẳng ngành đúng/phù hợp, khối lượng kiến thức cốt lõi là bao nhiêu tín chỉ?",
+        "expected_answer": "61 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "19"
+    },
+    {
+        "question": "Chương trình cho người có bằng Cao đẳng ngành gần yêu cầu tích lũy bao nhiêu tín chỉ cốt lõi?",
+        "expected_answer": "73 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "20"
+    },
+    {
+        "question": "Học phần 'Kỹ thuật điện đại cương' (TXELE0205) có số tín chỉ là bao nhiêu?",
+        "expected_answer": "3 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "21"
+    },
+    {
+        "question": "Trong chương trình cho người tốt nghiệp Cao đẳng ngành gần, học phần 'Luật kinh doanh' được xếp vào học kỳ mấy?",
+        "expected_answer": "Học kỳ 1",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "22"
+    },
+    {
+        "question": "Tổng số tín chỉ chương trình đào tạo dành cho người tốt nghiệp Cao đẳng ngành xa là bao nhiêu?",
+        "expected_answer": "97 tín chỉ (91 cốt lõi + 6 bổ sung)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "23"
+    },
+    {
+        "question": "Thời gian đào tạo cho người tốt nghiệp Cao đẳng ngành xa là bao lâu?",
+        "expected_answer": "2,5 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "24"
+    },
+    {
+        "question": "Người tốt nghiệp Trung cấp ngành đúng/phù hợp cần học trong thời gian bao lâu?",
+        "expected_answer": "02 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "25"
+    },
+    {
+        "question": "Tổng số tín chỉ cho chương trình dành cho người tốt nghiệp Trung cấp ngành đúng/phù hợp là bao nhiêu?",
+        "expected_answer": "80 tín chỉ (74 cốt lõi + 6 bổ sung)",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "26"
+    },
+    {
+        "question": "Khối lượng kiến thức cốt lõi cho người tốt nghiệp Trung cấp ngành gần là bao nhiêu tín chỉ?",
+        "expected_answer": "91 tín chỉ",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "27"
+    },
+    {
+        "question": "Người tốt nghiệp Trung cấp ngành xa phải hoàn thành tổng cộng bao nhiêu tín chỉ (cả bổ sung)?",
+        "expected_answer": "109 tín chỉ",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "28"
+    },
+    {
+        "question": "Thời gian đào tạo cho người tốt nghiệp Trung cấp ngành xa là bao lâu?",
+        "expected_answer": "03 năm",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "29"
+    },
+    {
+        "question": "Mô tả ngắn gọn nội dung của học phần 'Phát triển kỹ năng cá nhân'.",
+        "expected_answer": "Giúp sinh viên hiểu điểm mạnh/yếu, tự tin, suy nghĩ tích cực, xác định mục tiêu, kỹ năng giao tiếp, làm việc nhóm và quản lý thời gian.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "30"
+    },
+    {
+        "question": "Học phần 'Nhập môn Internet và Elearning' dành cho đối tượng nào và mục đích là gì?",
+        "expected_answer": "Dành cho sinh viên năm nhất, nhằm trang bị kiến thức Internet và E-Learning để phục vụ quá trình tự học, tự nghiên cứu trong hệ đào tạo từ xa.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "31"
+    },
+    {
+        "question": "Học phần 'Kinh tế chính trị Mác-Lênin' nghiên cứu những vấn đề gì của Việt Nam?",
+        "expected_answer": "Kinh tế thị trường định hướng xã hội chủ nghĩa, công nghiệp hóa, hiện đại hóa và hội nhập kinh tế quốc tế.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "32"
+    },
+    {
+        "question": "Học phần 'Xác suất và thống kê' cung cấp những kiến thức cơ bản nào?",
+        "expected_answer": "Phép tính xác suất, quy luật phân phối, lý thuyết mẫu, ước lượng tham số, kiểm định giả thiết, tương quan và hồi quy.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "33"
+    },
+    {
+        "question": "Trình độ tiếng Anh mục tiêu của học phần 'Tiếng Anh 1' là gì?",
+        "expected_answer": "Cấp độ đầu của trình độ A2",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "34"
+    },
+    {
+        "question": "Học phần 'Tiếng Anh 3' hướng tới đạt trình độ nào?",
+        "expected_answer": "Cấp độ đầu của trình độ B1",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "35"
+    },
+    {
+        "question": "Học phần 'Tin học trong Kinh tế công nghiệp' bao gồm những nội dung chính nào?",
+        "expected_answer": "Tin học văn phòng, phần mềm ứng dụng tài chính kế toán, và soạn thảo văn bản hợp đồng kinh tế.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "36"
+    },
+    {
+        "question": "Liệt kê các luật được đề cập trong học phần 'Pháp luật đại cương'.",
+        "expected_answer": "Luật Hiến pháp, luật hành chính, luật dân sự, luật hình sự, luật hôn nhân và gia đình, luật phòng chống tham nhũng.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "37"
+    },
+    {
+        "question": "Học phần 'Lịch sử các học thuyết kinh tế' bao gồm các trường phái nào?",
+        "expected_answer": "Chủ nghĩa Trọng thương, Cổ điển, Mác-Lênin, Tân cổ điển, Keynes, và trường phái Chính hiện đại.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "38"
+    },
+    {
+        "question": "Mục đích của học phần 'Định hướng nghề nghiệp ngành Kinh tế công nghiệp' là gì?",
+        "expected_answer": "Giới thiệu chương trình đào tạo, vị trí việc làm, khung năng lực, hướng dẫn xây dựng mục tiêu và kế hoạch phát triển bản thân.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "39"
+    },
+    {
+        "question": "Học phần 'Luật kinh doanh' trang bị kỹ năng gì cho sinh viên?",
+        "expected_answer": "Kỹ năng giải quyết các vấn đề pháp lý thực tiễn trong hoạt động kinh doanh, thành lập và quản lý doanh nghiệp.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "40"
+    },
+    {
+        "question": "Nội dung chính của học phần 'Kinh tế học vi mô' bao gồm những gì?",
+        "expected_answer": "Cung - cầu, độ co giãn, hành vi người tiêu dùng, hành vi nhà sản xuất, cấu trúc thị trường, và vai trò của chính phủ.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "41"
+    },
+    {
+        "question": "Học phần 'Kinh tế học vĩ mô' giúp sinh viên hiểu về các mô hình và chính sách nào?",
+        "expected_answer": "Mô hình IS-LM, chính sách tài khóa, chính sách tiền tệ trong nền kinh tế đóng và mở.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "42"
+    },
+    {
+        "question": "Học phần 'Đề án kinh tế học' có vai trò gì trong chương trình đào tạo?",
+        "expected_answer": "Củng cố kiến thức vi mô và vĩ mô, trang bị kỹ năng sử dụng công cụ và mô hình kinh tế để giải quyết bài toán cụ thể.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "43"
+    },
+    {
+        "question": "Nội dung '4P' (Sản phẩm, giá, phân phối, xúc tiến) nằm trong học phần nào?",
+        "expected_answer": "Marketing căn bản",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "44"
+    },
+    {
+        "question": "Học phần 'Nguyên lý kế toán' cung cấp những kiến thức nền tảng gì?",
+        "expected_answer": "Bản chất, đối tượng, phương pháp kế toán, quá trình thu thập/ghi chép số liệu, và các hình thức kế toán.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "45"
+    },
+    {
+        "question": "Học phần 'Thống kê doanh nghiệp' hướng dẫn tính toán các chỉ tiêu nào?",
+        "expected_answer": "Kết quả sản xuất kinh doanh, chi phí giá thành, lao động, tài sản cố định và nguồn vốn.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "46"
+    },
+    {
+        "question": "Học phần 'Phân tích hoạt động kinh doanh' giúp sinh viên làm gì?",
+        "expected_answer": "Phân tích kết quả SXKD, sử dụng yếu tố sản xuất, chi phí, giá thành, và tình hình tài chính để đưa ra giải pháp.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "47"
+    },
+    {
+        "question": "Nội dung 'định giá dòng tiền chiết khấu' và 'NPV' thuộc học phần nào?",
+        "expected_answer": "Tài chính doanh nghiệp",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "48"
+    },
+    {
+        "question": "Các chức năng quản trị được dạy trong môn 'Quản trị học' là gì?",
+        "expected_answer": "Hoạch định, tổ chức, lãnh đạo, kiểm tra.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "49"
+    },
+    {
+        "question": "Học phần 'Kinh tế lượng' nghiên cứu các khuyết tật mô hình nào?",
+        "expected_answer": "Đa cộng tuyến, phương sai của sai số thay đổi, tự tương quan.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "50"
+    },
+    {
+        "question": "Mối quan hệ 'Chi phí - Khối lượng - Lợi nhuận' được giảng dạy trong môn nào?",
+        "expected_answer": "Kế toán quản trị 1",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "51"
+    },
+    {
+        "question": "Mục tiêu của học phần 'Thực tập cơ sở ngành (Chuyên ngành Kế toán DNCN)' là gì?",
+        "expected_answer": "Rèn luyện kỹ năng thực hành quy trình luân chuyển chứng từ kế toán trên các tình huống giả định.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "52"
+    },
+    {
+        "question": "Học phần 'Kiểm toán căn bản' trang bị những kiến thức gì?",
+        "expected_answer": "Bản chất, phương pháp, quy trình kiểm toán, tổ chức bộ máy và chuẩn mực kiểm toán.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "53"
+    },
+    {
+        "question": "Học phần 'Nghiệp vụ ngân hàng thương mại' bao gồm các nghiệp vụ tín dụng nào?",
+        "expected_answer": "Cho vay, chiết khấu, bao thanh toán, cho thuê, bảo lãnh.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "54"
+    },
+    {
+        "question": "Học phần 'Kế toán hành chính sự nghiệp' hướng dẫn cách lập loại báo cáo nào?",
+        "expected_answer": "Báo cáo tài chính của các đơn vị hành chính sự nghiệp.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "55"
+    },
+    {
+        "question": "Học phần 'Kế toán tài chính 1' tập trung vào các nội dung nào?",
+        "expected_answer": "Tiền lương, tài sản cố định, bất động sản đầu tư, hàng tồn kho, và tính giá thành sản phẩm.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "56"
+    },
+    {
+        "question": "Học phần 'Kế toán tài chính 2' bao gồm việc lập báo cáo gì?",
+        "expected_answer": "Báo cáo tài chính.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "57"
+    },
+    {
+        "question": "Trong 'Kế toán thuế', sinh viên được học về các loại thuế nào?",
+        "expected_answer": "GTGT, tiêu thụ đặc biệt, xuất nhập khẩu, thu nhập doanh nghiệp, thu nhập cá nhân và thuế tài sản.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "58"
+    },
+    {
+        "question": "Học phần 'Kế toán máy' sử dụng phần mềm nào để giảng dạy?",
+        "expected_answer": "Excel và phần mềm kế toán Misa SME.NET.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "59"
+    },
+    {
+        "question": "Học phần 'Tổ chức công tác kế toán' giúp sinh viên rèn luyện kỹ năng cho vị trí nào?",
+        "expected_answer": "Kế toán viên, kế toán tổng hợp.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "60"
+    },
+    {
+        "question": "Học phần 'Kế toán quốc tế' giới thiệu về đặc điểm kế toán của quốc gia nào?",
+        "expected_answer": "Mỹ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "61"
+    },
+    {
+        "question": "Học phần 'Kế toán xây dựng cơ bản' đề cập đến đặc điểm hạch toán gì đặc thù?",
+        "expected_answer": "Chi phí sản xuất, tính giá thành sản phẩm, bàn giao công trình và doanh thu xây lắp.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "62"
+    },
+    {
+        "question": "Học phần 'Kiểm toán nội bộ' bao gồm nội dung gì?",
+        "expected_answer": "Chuẩn mực, quy trình, báo cáo kiểm toán nội bộ và kiểm toán các phần hành kế toán trong doanh nghiệp.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "63"
+    },
+    {
+        "question": "Mục tiêu của 'Thực tập tốt nghiệp Chuyên ngành Kế toán DNCN' là gì?",
+        "expected_answer": "Trải nghiệm thực tế, so sánh lý thuyết và thực tiễn, kiến nghị giải pháp hoàn thiện công tác kế toán tại đơn vị thực tập.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "64"
+    },
+    {
+        "question": "Sinh viên có thể chọn học phần nào thay thế cho Khóa luận tốt nghiệp?",
+        "expected_answer": "Kế toán môi trường và Kế toán ngân hàng thương mại.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "65"
+    },
+    {
+        "question": "Số tín chỉ của khóa luận tốt nghiệp (hoặc các học phần thay thế) là bao nhiêu?",
+        "expected_answer": "6 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "66"
+    },
+    {
+        "question": "So sánh thời gian đào tạo giữa người có bằng Trung cấp ngành gần và Trung cấp ngành xa.",
+        "expected_answer": "Trung cấp ngành gần đào tạo 2,5 năm, trong khi Trung cấp ngành xa đào tạo 3 năm.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "67"
+    },
+    {
+        "question": "Có bao nhiêu học phần bổ sung bắt buộc trong tất cả các chương trình đào tạo?",
+        "expected_answer": "2 học phần (Nhập môn Internet và Elearning, Phát triển kỹ năng cá nhân).",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "68"
+    },
+    {
+        "question": "Trong chương trình cho người tốt nghiệp THPT, học phần 'Khóa luận tốt nghiệp' được thực hiện ở học kỳ nào?",
+        "expected_answer": "Học kỳ 12.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "69"
+    },
+    {
+        "question": "Tổng số tín chỉ Khối kiến thức giáo dục chuyên nghiệp cho người tốt nghiệp THPT là bao nhiêu?",
+        "expected_answer": "92 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "70"
+    },
+    {
+        "question": "Học phần 'Tư tưởng Hồ Chí Minh' thuộc khối kiến thức nào và có mấy tín chỉ?",
+        "expected_answer": "Khối kiến thức giáo dục đại cương, 2 tín chỉ.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "71"
+    },
+    {
+        "question": "Học phần 'Tiếng Anh 2' có điều kiện tiên quyết là gì?",
+        "expected_answer": "Học phần 'Tiếng Anh 1' (TXENG112).",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "72"
+    },
+    {
+        "question": "Đối với chương trình dành cho người tốt nghiệp ĐH ngành gần, học phần 'Marketing căn bản' học ở kỳ mấy?",
+        "expected_answer": "Học kỳ 1.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "73"
+    },
+    {
+        "question": "Trong chương trình cho người có bằng ĐH ngành xa, tổng số tín chỉ khối kiến thức nhóm ngành/cơ sở ngành là bao nhiêu?",
+        "expected_answer": "48 tín chỉ.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "74"
+    },
+    {
+        "question": "Học phần 'Kế toán ngân sách' (TXFIM0302) có số tín chỉ là bao nhiêu?",
+        "expected_answer": "3 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "75"
+    },
+    {
+        "question": "Học phần 'Đề án kế toán tài chính' có mã học phần là gì?",
+        "expected_answer": "TXFIM485.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "76"
+    },
+    {
+        "question": "Điều kiện tốt nghiệp của chương trình là gì?",
+        "expected_answer": "Hoàn thành chương trình theo Quy chế đào tạo.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "77"
+    },
+    {
+        "question": "Hình thức đánh giá phổ biến cho các học phần lý thuyết là gì?",
+        "expected_answer": "Trắc nghiệm.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "78"
+    },
+    {
+        "question": "Hình thức đánh giá cho các học phần đồ án/đề án/khóa luận là gì?",
+        "expected_answer": "Chấm báo cáo/thuyết minh/sản phẩm.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "79"
+    },
+    {
+        "question": "Trong thang trình độ năng lực, mức độ 6 của 'Kiến thức' tương ứng với gì?",
+        "expected_answer": "Sáng tạo.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "80"
+    },
+    {
+        "question": "Về kỹ năng, mức độ 1 trong thang năng lực là gì?",
+        "expected_answer": "Bắt chước.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "81"
+    },
+    {
+        "question": "Học phần 'Kế toán môi trường' cung cấp kiến thức gì?",
+        "expected_answer": "Kế toán môi trường doanh nghiệp, quốc gia và kế toán quản trị chi phí môi trường.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "82"
+    },
+    {
+        "question": "Học phần 'Tài chính doanh nghiệp' có mã học phần là gì?",
+        "expected_answer": "TXFIM334.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "83"
+    },
+    {
+        "question": "Sự khác biệt về số tín chỉ 'Kiến thức nhóm ngành' giữa chương trình cho người có bằng ĐH ngành gần và ĐH ngành xa?",
+        "expected_answer": "ĐH ngành gần: 12 tín chỉ; ĐH ngành xa: 31 tín chỉ.",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "84"
+    },
+    {
+        "question": "Chương trình dành cho đối tượng nào có thời gian đào tạo ngắn nhất?",
+        "expected_answer": "Người đã có bằng tốt nghiệp Đại học ngành gần, Cao đẳng ngành đúng/phù hợp, và Trung cấp ngành đúng/phù hợp (đều 02 năm).",
+        "difficulty": "Hard",
+        "category": "RAG_ONLY",
+        "id": "85"
+    },
+    {
+        "question": "Học phần 'Định hướng nghề nghiệp ngành Quản lý công nghiệp' có mã là gì?",
+        "expected_answer": "TXFIM0102.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "86"
+    },
+    {
+        "question": "Đối với người tốt nghiệp THPT, 'Ngoại ngữ' chiếm bao nhiêu tín chỉ trong khối kiến thức giáo dục đại cương?",
+        "expected_answer": "9 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "87"
+    },
+    {
+        "question": "Học phần 'Marketing căn bản' có mã học phần là gì?",
+        "expected_answer": "TXFIM331.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "88"
+    },
+    {
+        "question": "Tổng số học kỳ của chương trình dành cho người tốt nghiệp Trung cấp ngành xa là bao nhiêu?",
+        "expected_answer": "8 học kỳ.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "89"
+    },
+    {
+        "question": "Chương trình đào tạo này do trường nào ban hành?",
+        "expected_answer": "Trường Đại học Kỹ thuật Công nghiệp - Đại học Thái Nguyên.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "90"
+    },
+    {
+        "question": "Ngày ban hành Quyết định kèm theo chương trình giáo dục này là ngày nào?",
+        "expected_answer": "05 tháng 6 năm 2024.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "91"
+    },
+    {
+        "question": "Học phần 'Kỹ năng phối hợp giữa các cá nhân' thuộc nhóm chuẩn đầu ra nào?",
+        "expected_answer": "Nhóm 3 (CDR 3).",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "92"
+    },
+    {
+        "question": "Có bao nhiêu học phần tự chọn trong 'Khối kiến thức bổ sung'?",
+        "expected_answer": "Không có, chỉ có 2 học phần bắt buộc.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "93"
+    },
+    {
+        "question": "Với người tốt nghiệp Cao đẳng ngành xa, học phần 'Toán kinh tế' được học ở kỳ nào?",
+        "expected_answer": "Học kỳ 1.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "94"
+    },
+    {
+        "question": "Học phần 'Đề án thuế' (TXFIM539) có khối lượng bao nhiêu tín chỉ?",
+        "expected_answer": "1 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "95"
+    },
+    {
+        "question": "Môn 'Pháp luật đại cương' có mã số là gì?",
+        "expected_answer": "TXFIM207.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "96"
+    },
+    {
+        "question": "Học phần 'Kiểm toán tài chính' (TXFIM354) thuộc nhóm kiến thức nào?",
+        "expected_answer": "Kiến thức chuyên ngành (Tự chọn).",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "97"
+    },
+    {
+        "question": "Sinh viên tốt nghiệp THPT phải tích lũy bao nhiêu tín chỉ cho khối kiến thức 'Toán học' trong phần giáo dục đại cương?",
+        "expected_answer": "2 tín chỉ.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "98"
+    },
+    {
+        "question": "Tên tiếng Anh của ngành Kinh tế công nghiệp là gì?",
+        "expected_answer": "Industrial Economy.",
+        "difficulty": "Easy",
+        "category": "RAG_ONLY",
+        "id": "99"
+    },
+    {
+        "question": "Trong mô tả học phần, 'Kế toán thương mại dịch vụ' bao gồm kế toán hoạt động nào ngoài mua bán hàng hóa?",
+        "expected_answer": "Kế toán xuất nhập khẩu và kế toán hoạt động kinh doanh dịch vụ.",
+        "difficulty": "Medium",
+        "category": "RAG_ONLY",
+        "id": "100"
+    }
+]
